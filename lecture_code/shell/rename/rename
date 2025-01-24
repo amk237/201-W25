@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ $# -ne 2 ]; then
+  echo "Usage: ${0} sourceExtension targetExtension"
+  exit
+fi
+
+for fname in *$1; do
+  if [ ${fname} != "*$1" ]; then
+    var=${fname%$1}
+    mv ${var}$1 ${var}$2
+  fi
+done

@@ -1,0 +1,6 @@
+This is a file
+   It     has     spacing
+Please consider   that the spacing
+
+
+is part of the contents of the file
