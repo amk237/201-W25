@@ -1,21 +1,22 @@
 #include <stdio.h>
 
 void print_binary(unsigned int num) {
-  /* This function takes one natural number parameter and prints out
-   * the binary representation of that number
-   */
-
-  // This function currently doesn't work because we're working from right to
-  // left... In order to make work we need to work left to right. We can do so
-  // by finding the largest power of two that is smaller than num.
-  // And then, changing our loop condition and our updates.
-  while (num != 0) {
-    if (num % 2) {
+  if (num == 0) {
+    printf("0");
+  }
+  int power = 1;
+  while (power <= num) {
+    power = power*2;
+  }
+  power = power/2;
+  while (power > 0) {
+    if (power <= num) {
       printf("1");
+      num = num - power;
     } else {
       printf("0");
     }
-    num = num/2;
+    power = power/2;
   }
   printf("\n");
 }
@@ -23,4 +24,5 @@ void print_binary(unsigned int num) {
 int main() {
   print_binary(5); // Should print 101
   print_binary(11); // This should print 1011
+  print_binary(128);
 }
