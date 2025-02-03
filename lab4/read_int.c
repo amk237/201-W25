@@ -8,7 +8,6 @@ int readint() {
    * whitespace, and then stop reading the integer the first
    * time a non-digit character is read.
    */
-
 }
 
 int main() {
