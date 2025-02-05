@@ -25,4 +25,5 @@ int main() {
   print_binary(5); // Should print 101
   print_binary(11); // This should print 1011
   print_binary(128);
+  print_binary(0);
 }

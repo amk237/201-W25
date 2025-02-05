@@ -23,7 +23,7 @@ int main() {
   blah();
   int x;
   printf("%d\n", x);
-  foo(35);
+  foo(24);
   int y;
   printf("%d\n", y);
   blah();
