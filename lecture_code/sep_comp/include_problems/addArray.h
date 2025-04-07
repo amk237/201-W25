@@ -1,3 +1,6 @@
+#ifndef ADDARRAY_H_
+#define ADDARRAY_H_
+
 #include <stddef.h>
 
 // This function takes two arrays of integers,
@@ -14,3 +17,6 @@ int mutateAdd(int *dest, int *src, size_t len) {
     dest[i] = dest[i] + src[i];
   }
 }
+
+
+#endif
